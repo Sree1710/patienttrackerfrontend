@@ -16,6 +16,9 @@ export class PatientserviceService {
   dlogin(data3:any){
     return this.http.post<any>('http://localhost:3200/dlogin',data3)
   }
+  plogin(data5:any){
+    return this.http.post<any>('http://localhost:3200/plogin',data5)
+  }
   bapp(data4:any){
     return this.http.post<any>('http://localhost:3200/bp',data4)
   }

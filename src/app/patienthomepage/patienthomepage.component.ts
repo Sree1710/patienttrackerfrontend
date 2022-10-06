@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PatientserviceService } from '../patientservice.service';
 
 @Component({
   selector: 'app-patienthomepage',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./patienthomepage.component.css']
 })
 export class PatienthomepageComponent implements OnInit {
-
-  constructor() { }
+dataa={
+  patientUsername:"",
+  patientPassword:""
+}
+  constructor(private api:PatientserviceService, private router:Router) { }
 
   ngOnInit(): void {
   }
- 
+ Plogin(){
+  this.api.plogin(this.dataa).subscribe((dataa)=>{
+    if(dataa.success === true){
+      this.router.navigate(['/pm'])
+    }
+    else{
+      alert(dataa.success)
+    }
+  })
+ }
 }
