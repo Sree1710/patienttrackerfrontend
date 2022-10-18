@@ -13,14 +13,16 @@
         <th scope="col">PATIENT NAME</th>
         <th scope="col">AGE</th>
         <th scope="col">PHONE NUMBER</th>
+        <th scope="col">PAST MEDICAL HISTORY</th>
       </tr>
     </thead>
 
     <tbody>
       <tr *ngFor="let i of dataa">
-        <td><a href="">{{i.patientName}}</a></td>
+        <td>{{i.patientName}}</td>
         <td>{{i.patientAge}}</td>
         <td>{{i.patientPhonenumber}}</td>
+        <td>{{i.patientHistory}}</td>
       </tr>
       </tbody>
       

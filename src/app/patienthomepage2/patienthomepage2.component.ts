@@ -11,6 +11,7 @@ dataa={
   patientName:"",
   patientAge:"",
   patientPhonenumber:"",
+  patientHistory:"",
   patientUsername:"",
   patientPassword:""
 }
