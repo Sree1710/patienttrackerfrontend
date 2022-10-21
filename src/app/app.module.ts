@@ -22,6 +22,9 @@ import { Admin2Component } from './admin2/admin2.component';
 import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 import { ViewappointmentComponent } from './viewappointment/viewappointment.component';
 import { ViewadminComponent } from './viewadmin/viewadmin.component';
+import { DocnavComponent } from './docnav/docnav.component';
+import { PatnavComponent } from './patnav/patnav.component';
+import { AdmnavComponent } from './admnav/admnav.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { ViewadminComponent } from './viewadmin/viewadmin.component';
     Admin2Component,
     BookappointmentComponent,
     ViewappointmentComponent,
-    ViewadminComponent
+    ViewadminComponent,
+    DocnavComponent,
+    PatnavComponent,
+    AdmnavComponent
   ],
   imports: [
     BrowserModule,

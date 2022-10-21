@@ -11,7 +11,8 @@ export class Doctorhomepage2Component implements OnInit {
   doctorName:"",
   doctorDepartment:"",
   doctorUsername:"",
-  doctorPassword:""
+  doctorPassword:"",
+  doctorUniqueId: ""
  }
   constructor(private api:PatientserviceService) { }
 

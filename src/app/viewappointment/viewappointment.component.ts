@@ -11,9 +11,10 @@ export class ViewappointmentComponent implements OnInit {
   constructor(private api:PatientserviceService) {
     api.viewApp().subscribe((response=>{
       this.data3=response
+      // console.log(response);
     }))
    }
-
+  
   ngOnInit(): void {
   }
 data3:any=[]
